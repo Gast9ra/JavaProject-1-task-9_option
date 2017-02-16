@@ -18,7 +18,7 @@ public class major {
     }
 
     public void productAdd(String nameProd,String code,double price){
-
+    return;
     }
 }
 
