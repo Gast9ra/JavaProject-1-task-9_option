@@ -16,6 +16,27 @@ public class Major {
 
     static class listProduct {
         String nameProduct;
+
+        @Override
+        public boolean equals(Object o) {
+            if (this == o) return true;
+            if (o == null || getClass() != o.getClass()) return false;
+
+            listProduct that = (listProduct) o;
+
+            if (!nameProduct.equals(that.nameProduct)) return false;
+            if (!codeProduct.equals(that.codeProduct)) return false;
+            return Price.equals(that.Price);
+        }
+
+        @Override
+        public int hashCode() {
+            int result = nameProduct.hashCode();
+            result = 31 * result + codeProduct.hashCode();
+            result = 31 * result + Price.hashCode();
+            return result;
+        }
+
         Integer codeProduct;
         Double Price;
     }

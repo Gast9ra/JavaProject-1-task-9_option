@@ -36,7 +36,6 @@ public class test {
         double a=41.39*9;
         assertEquals(a,testClass.searchPriceByCode(154721,9));
         assertEquals("avokado",testClass.searchNameByCode(15141));
-        assertEquals(45.39,testClass.scanPriceByName("Potato"));
     }
 
 
