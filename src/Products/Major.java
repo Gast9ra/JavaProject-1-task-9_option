@@ -43,7 +43,7 @@ public class Major {
 
     public String searchNameByCode(int itemScan){
         for (int i = 0; i <= masProduct.size() - 1; i++) {
-            if (masProduct.get(i).codeProduct == itemScan) return masProduct.get(i).nameProduct;
+            if (masProduct.get(i).codeProduct.equals(itemScan)) return masProduct.get(i).nameProduct;
         }
         return "";
     }
@@ -51,7 +51,7 @@ public class Major {
     public int scanItemByName(String itemScan) {
         if (0 > masProduct.size() - 1) return -1;
         for (int i = 0; i <= masProduct.size() - 1; i++) {
-            if (masProduct.get(i).nameProduct == itemScan.toLowerCase()) return i;
+            if (masProduct.get(i).nameProduct.equals(itemScan.toLowerCase())) return i;
         }
         return -1;
     }
@@ -59,7 +59,7 @@ public class Major {
     public double scanPriceByName(String itemSearch) {
         if (0 > masProduct.size() - 1) return -1.0;
         for (int i = 0; i <= masProduct.size() - 1; i++) {
-            if (masProduct.get(i).nameProduct.toLowerCase() == itemSearch.toLowerCase()) return masProduct.get(i).Price;
+            if (masProduct.get(i).nameProduct.toLowerCase().equals(itemSearch.toLowerCase())) return masProduct.get(i).Price;
         }
         return -1.0;
     }
@@ -67,7 +67,7 @@ public class Major {
     public double searchPriceByCode(int code, int count) {
         if (0 > masProduct.size() - 1) return -1.0;
         for (int i = 0; i <= masProduct.size() - 1; i++) {
-            if (masProduct.get(i).codeProduct == code) return masProduct.get(i).Price * count;
+            if (masProduct.get(i).codeProduct.equals(code)) return masProduct.get(i).Price * count;
         }
         return -1.0;
     }
