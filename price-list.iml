@@ -10,8 +10,8 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" exported="" name="co.unruly:junit-rules:1.0" level="application" />
-    <orderEntry type="library" name="org.junit.jupiter:junit-jupiter-api:5.0.0-M3" level="project" />
-    <orderEntry type="library" name="org.junit.jupiter:junit-jupiter-engine:5.0.0-M3" level="project" />
     <orderEntry type="library" name="org.junit.jupiter:junit-jupiter-migration-support:5.0.0-M3" level="application" />
+    <orderEntry type="library" name="org.junit.jupiter:junit-jupiter-api:5.0.0-M3" level="application" />
+    <orderEntry type="library" name="org.junit.jupiter:junit-jupiter-engine:5.0.0-M3" level="application" />
   </component>
 </module>
